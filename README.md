@@ -6,6 +6,9 @@ This is an html/css/javascript application that visually demonstrates the probab
 This was inspired by Exercise 0.2 From the [The Nature of Code (2024 edition)](https://natureofcode.com/random/ "The Nature of Code by Daniel Shiffman")
 I created this as an expanded exploraton of the Exercise.
 
+## Run the code
+You can access this web app here: [Double Ace Simulator](https://gizmola.github.io/doubleAceSim)
+
 ## Who?
 [David Rolston](https://github.com/gizmola)
 
