@@ -36,7 +36,7 @@ const addCardImg = (elParentDiv, suit) => {
     elImg.setAttribute('src', cardImages[suit]);
     elParentDiv.appendChild(elImg);
 }
-const cardImages = ['/img/ace_hearts.svg', '/img/ace_clubs.svg', '/img/ace_diamonds.svg', '/img/ace_spades.svg'];
+const cardImages = ['img/ace_hearts.svg', 'img/ace_clubs.svg', 'img/ace_diamonds.svg', 'img/ace_spades.svg'];
 
 let oddsShuffled = Number.parseFloat(Math.pow(4/52, 2) * 100).toFixed(2);
 const elShuffleOdds = document.getElementsByClassName('odds-reshuffled');
