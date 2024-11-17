@@ -16,11 +16,11 @@
             <h2>Reshuffled Deck each Draw</h2>
             <div class="entry">
                 <label>Equation:</label>
-                <span class="data">(4/52) x (4/52)</span>
+                <div class="data">(4/52) x (4/52)</div>
             </div>
             <div class="entry">
                 <label>Odds:</label>
-                <span class="data odds-reshuffled"></span>
+                <div class="data odds-reshuffled"></div>
             </div>
         </section>
 
@@ -58,11 +58,11 @@
             <div id="samedeck" class="simulation"></div>
             <div class="entry">
                 <label>Total Aces:</label>
-                <span id="samedeck-aces" class="data">0</span>
+                <div id="samedeck-aces" class="data">0</div>
             </div>
             <div class="entry">
                 <label>Odds:</label>
-                <span class="data odds-samedeck"></span>
+                <div class="data odds-samedeck"></div>
             </div>
             <div class="entry">
                 <label>Actual:</label>
@@ -71,8 +71,8 @@
         </section>
 
         <div class="control">
-            <div>
-                <label>K Simulations:</label><input id="ksims" class="data" type="number" min="1" max="1000">
+            <div class="entry">
+                <label>K Simulations:</label><input id="ksims" class="data data--input" type="number" min="1" max="1000">
             </div>
             <div>
                 <button class="control__button">Run</button>

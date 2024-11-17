@@ -12,6 +12,7 @@ https://github.com/Lazzzer00/Best-CSS-Reset-2024
     --cyan: #20DAA5;
     --cyan-rgb: 32, 218, 165;
     --white: #f5ebeb;
+    --gray-rgb: 122, 122, 122;
 }
 
 *, *::before, *::after {
@@ -38,8 +39,10 @@ img, picture, svg, video, canvas {
 }
 
 label {
+    display: block;
     color: var(--purple);
     padding-right: .5em;
+    text-align: right;
 }
 
 input, button, textarea, select {
@@ -49,11 +52,16 @@ input, button, textarea, select {
 .data {
     margin-bottom: .3em;
     padding: .2em .5em;
+    align-self: left;
     text-align: right;
     color: var(--cyan);
     width: auto;
     background: rgba(var(--purple-rgb), 0.5);
 }
+.data--input {
+    text-align: left;
+}
+
 body, html {
     height: 100%; 
     scroll-behavior: smooth;
@@ -63,7 +71,6 @@ body, html {
 
 h1, h2, h3, h4, h5 {
     color: var(--purple);
-    /*text-shadow: 4px 3px 0 #7A7A7A, 2px 2px 2px rgba(206,89,55,0); */
     margin: .2em auto .5em auto;
 }
 
@@ -94,14 +101,15 @@ section {
     padding: .5em 1em;
     width: 80%;
     margin: auto;
-    border: 5px solid rgba(var(--purple-rgb), 0.5);
-    box-shadow: 2px 2px 2px 1px rgba(var(--purple-rgb), 0.95);
+    border: 2px solid rgba(var(--gray-rgb), 0.5);
+    box-shadow: 2px 2px 2px 1px rgba(var(--gray-rgb), 0.95);
     margin-bottom: 1em;
 }
 
 .entry {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .simulation {
