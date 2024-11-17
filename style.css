@@ -1,0 +1,136 @@
+/* 
+Basic css reset 
+https://github.com/Lazzzer00/Best-CSS-Reset-2024
+*/
+
+/* Triadic Pallete colors */
+:root {
+    --goldenrod: #daa520;
+    --goldenrod-rgb: 218, 165, 32;
+    --purple: #A520DA;
+    --purple-rgb: 165, 32, 218;
+    --cyan: #20DAA5;
+    --cyan-rgb: 32, 218, 165;
+    --white: #f5ebeb;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box; 
+}
+
+* {
+    margin: 0; 
+    padding: 0; 
+}
+
+html:focus-within {
+    scroll-behavior: smooth; 
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto; 
+}
+
+img, picture, svg, video, canvas { 
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle; 
+}
+
+label {
+    color: var(--purple);
+    padding-right: .5em;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+.data {
+    margin-bottom: .3em;
+    padding: .2em .5em;
+    text-align: right;
+    color: var(--cyan);
+    width: auto;
+    background: rgba(var(--purple-rgb), 0.5);
+}
+body, html {
+    height: 100%; 
+    scroll-behavior: smooth;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--white);
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--purple);
+    /*text-shadow: 4px 3px 0 #7A7A7A, 2px 2px 2px rgba(206,89,55,0); */
+    margin: .2em auto .5em auto;
+}
+
+body {
+    background: var(--goldenrod);
+    font-size: 16px;
+}
+
+header {
+    background: var(--cyan);
+    padding: 2em;
+    text-align: center;
+}
+
+.header--title {
+    color: var(--goldenrod);
+    font-size: 40pt;
+    text-shadow: 4px 3px 0 #7A7A7A, 2px 2px 2px rgba(206,89,55,0);
+}
+main {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+section {
+    padding: .5em 1em;
+    width: 80%;
+    margin: auto;
+    border: 5px solid rgba(var(--purple-rgb), 0.5);
+    box-shadow: 2px 2px 2px 1px rgba(var(--purple-rgb), 0.95);
+    margin-bottom: 1em;
+}
+
+.entry {
+    display: flex;
+    justify-content: center;
+}
+
+.simulation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.simulation__card {
+    padding-bottom: 0.5em;
+    width: 1.4em;
+}
+
+.control {
+    padding: 2em;
+}
+
+.control__button {
+    padding: 8px 15px;
+    color: var(--white);
+    align-items: center;
+    transition: all 0.4s;
+    background: var(--purple);
+    border-radius: 3px;
+}
+
+.control__button:hover,
+.control__button:focus {    
+    background-color: var(--cyan);
+    color: rgba(255,255,255);
+    cursor: pointer;
+}

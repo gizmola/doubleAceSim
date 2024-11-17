@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odds to Deal 2 Aces in a row</title>
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="header--title">Odds to Draw 2 Aces in a row</h1>
+    </header> 
+    <main>
+        <section>
+            <h2>Reshuffled Deck each Draw</h2>
+            <div class="entry">
+                <label>Equation:</label>
+                <span class="data">(4/52) x (4/52)</span>
+            </div>
+            <div class="entry">
+                <label>Odds:</label>
+                <span class="data odds-reshuffled"></span>
+            </div>
+        </section>
+
+        <section>
+            <h2>From Same Deck</h2>
+            <div class="entry">
+                <label>Equation:</label>
+                <span class="data">(4/52) x (3/51)</span>
+            </div>
+            <div class="entry">
+                <label>Odds:</label>
+                <span class="data odds-samedeck"></span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Reshuffled Deck [<span class="ksims"></span>k simulation]</h2>
+            <div id="reshuffledeck" class="simulation"></div>
+            <div class="entry">
+                <label>Total Aces:</label>
+                <span id="reshuffledeck-aces" class="data">0</span>
+            </div>
+            <div class="entry">
+                <label>Odds:</label>
+                <span class="data odds-reshuffled"></span>
+            </div>
+            <div class="entry">
+                <label>Actual:</label>
+                <span id="reshuffledeck-actual" class="data">0.00%</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>From Same Deck [<span class="ksims"></span>k simulation]</h2>
+            <div id="samedeck" class="simulation"></div>
+            <div class="entry">
+                <label>Total Aces:</label>
+                <span id="samedeck-aces" class="data">0</span>
+            </div>
+            <div class="entry">
+                <label>Odds:</label>
+                <span class="data odds-samedeck"></span>
+            </div>
+            <div class="entry">
+                <label>Actual:</label>
+                <span id="samedeck-actual" class="data">0.00%</span>
+            </div>
+        </section>
+
+        <div class="control">
+            <div>
+                <label>K Simulations:</label><input id="ksims" class="data" type="number" min="1" max="1000">
+            </div>
+            <div>
+                <button class="control__button">Run</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
